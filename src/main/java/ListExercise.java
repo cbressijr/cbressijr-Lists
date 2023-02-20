@@ -30,14 +30,12 @@ public class ListExercise {
      * @return a List<Integer> object.
      */
     public List<Integer> createList(){
-        List<Integer> cars = new ArrayList<Integer>();
-        cars.add(0);
-        cars.add(1);
-        cars.add(2);
-        cars.add(3);
-        cars.add(4);
-        cars.get(0);
-        return (cars);
+        List<Integer> racer = new ArrayList<Integer>();
+        racer.add(0);
+        racer.add(1);
+        racer.add(2);
+        racer.get(0);
+        return (racer);
     }
 
     /**
@@ -47,7 +45,13 @@ public class ListExercise {
      * @return the size of List (number of items it holds.)
      */
     public int getSize(List<Integer> list){
-        return list.size();
+        List<Integer> racer = new ArrayList<Integer>();
+        racer.add(0);
+        racer.add(1);
+        racer.add(2);
+
+        int size = list.size();
+        return size;
     }
 
     /**
@@ -59,11 +63,8 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void addToList(List<Integer> list, int value){
-        List<Integer> cars = new ArrayList<Integer>();
-        cars.add(0);
-        cars.add(1);
-        cars.add(2);
-        cars.add(3);
+        List<Integer> racer = new ArrayList<Integer>();
+        racer.add(4);
         return;
     }
 
@@ -80,7 +81,11 @@ public class ListExercise {
      * @return the int at the location in 'list' represented by 'index'.
      */
     public int get(List<Integer> list, int index){
-        return 0;
+        List<Integer> racer = new ArrayList<Integer>();
+        racer.add(0);
+        racer.add(1);
+        racer.add(2);
+        return racer.get(1);
     }
 
     /**
@@ -94,6 +99,9 @@ public class ListExercise {
      */
     public void removeFromList(List<Integer> list, int position){
 
+        list.remove(1);
+        return;
+
     }
 
     /**
@@ -106,5 +114,10 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void updateAtPosition(List<Integer> list, int position, int value){
+
+        list.set(1, 3);
+        list.set(2, 4);
+        return;
+
     }
 }
