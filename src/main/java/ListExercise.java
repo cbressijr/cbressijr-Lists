@@ -44,6 +44,7 @@ public class ListExercise {
      * @param list a List<Integer> object.
      * @return the size of List (number of items it holds.)
      */
+    // Need to fix!!
     public int getSize(List<Integer> list){
         List<Integer> racer = new ArrayList<Integer>();
         racer.add(0);
@@ -80,6 +81,7 @@ public class ListExercise {
      * @param index represents the index of the element we would like to retrieve.
      * @return the int at the location in 'list' represented by 'index'.
      */
+    // Need to fix!!
     public int get(List<Integer> list, int index){
         List<Integer> racer = new ArrayList<Integer>();
         racer.add(0);
@@ -97,6 +99,8 @@ public class ListExercise {
      * @param position represents the index of the element we would like to remove.
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
+
+     // Need to fix!!
     public void removeFromList(List<Integer> list, int position){
 
         list.remove(1);
