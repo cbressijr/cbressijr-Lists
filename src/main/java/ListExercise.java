@@ -30,7 +30,7 @@ public class ListExercise {
      * @return a List<Integer> object.
      */
     public List<Integer> createList(){
-        List<Integer> racer = new ArrayList<Integer>();
+        ArrayList<Integer> racer = new ArrayList<Integer>();
         racer.add(0);
         racer.add(1);
         racer.add(2);
@@ -46,13 +46,7 @@ public class ListExercise {
      */
     // Need to fix!!
     public int getSize(List<Integer> list){
-        List<Integer> racer = new ArrayList<Integer>();
-        racer.add(0);
-        racer.add(1);
-        racer.add(2);
-
-        int size = list.size();
-        return size;
+        return list.size();
     }
 
     /**
@@ -83,11 +77,7 @@ public class ListExercise {
      */
     // Need to fix!!
     public int get(List<Integer> list, int index){
-        List<Integer> racer = new ArrayList<Integer>();
-        racer.add(0);
-        racer.add(1);
-        racer.add(2);
-        return racer.get(1);
+        return list.get(index);
     }
 
     /**
@@ -103,7 +93,7 @@ public class ListExercise {
      // Need to fix!!
     public void removeFromList(List<Integer> list, int position){
 
-        list.remove(1);
+        list.remove(position);
         return;
 
     }
