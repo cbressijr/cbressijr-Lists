@@ -1,6 +1,6 @@
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 
 /**
  * Lists are ordered collections. This means that we could access elements at a certain position of a list,
@@ -80,6 +80,7 @@ public class ListExercise {
         ArrayList<Integer> racer = new ArrayList<Integer>();
         racer.add(1);
         racer.add(2);
+        racer.add(3);
         return racer.get(1);
     }
 
@@ -99,7 +100,7 @@ public class ListExercise {
         racer.add(1);
         racer.add(2);
         racer.add(3);
-        racer.remove(2);
+        racer.remove(0);
         return;
 
     }
@@ -116,7 +117,6 @@ public class ListExercise {
     public void updateAtPosition(List<Integer> list, int position, int value){
 
         list.set(1, 3);
-        list.set(2, 4);
         return;
 
     }
