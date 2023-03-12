@@ -30,11 +30,8 @@ public class ListExercise {
      * @return a List<Integer> object.
      */
     public List<Integer> createList(){
-        ArrayList<Integer> racer = new ArrayList<Integer>();
-        racer.add(1);
-        racer.add(2);
-        racer.add(3);
-        return (racer);
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        return list;
     }
 
     /**
@@ -44,9 +41,7 @@ public class ListExercise {
      * @return the size of List (number of items it holds.)
      */
     public int getSize(List<Integer> list){
-        ArrayList<Integer> racer = new ArrayList<Integer>();
-        racer.add(0);
-        return racer.size();
+        return list.size();
     }
 
     /**
@@ -58,8 +53,7 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void addToList(List<Integer> list, int value){
-        List<Integer> racer = new ArrayList<Integer>();
-        racer.add(4);
+        list.add(value);
         return;
     }
 
@@ -75,13 +69,8 @@ public class ListExercise {
      * @param index represents the index of the element we would like to retrieve.
      * @return the int at the location in 'list' represented by 'index'.
      */
-    // Need to fix!!
     public int get(List<Integer> list, int index){
-        ArrayList<Integer> racer = new ArrayList<Integer>();
-        racer.add(1);
-        racer.add(2);
-        racer.add(3);
-        return racer.get(1);
+        return list.get(index);
     }
 
     /**
@@ -94,13 +83,8 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
 
-     // Need to fix!!
     public void removeFromList(List<Integer> list, int position){
-        ArrayList<Integer> racer = new ArrayList<Integer>();
-        racer.add(1);
-        racer.add(2);
-        racer.add(3);
-        racer.remove(0);
+        list.remove(position);
         return;
 
     }
@@ -116,7 +100,7 @@ public class ListExercise {
      */
     public void updateAtPosition(List<Integer> list, int position, int value){
 
-        list.set(1, 3);
+        list.set(position, value);
         return;
 
     }
